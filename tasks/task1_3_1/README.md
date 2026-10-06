@@ -15,3 +15,8 @@ Bundle it with its dependencies as an 'executable JAR' file like this:
     ./kotlin package
 
 See the Kotlin Programming Guide for more details.
+
+
+**_Notes: The whole point of this is to get one .jar file with the full program that does 
+not have any dependencies, and you can move it wherever you want without the need to move
+any of the other files. It's like the program fully compacted._**

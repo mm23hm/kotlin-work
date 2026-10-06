@@ -16,3 +16,6 @@ or run its unit tests with
     ./kotlin test
 
 (On Windows systems, use `.\kotlin.bat` instead of `./kotlin`.)
+
+
+**_Notes: You can use init function to create a new default Kotlin Toolchain Project_**

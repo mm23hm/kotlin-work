@@ -11,7 +11,7 @@ fun main() {
     val helloStyle = italic + underline + yellow
     term.println(helloStyle("HELLO WORLD!"))
 
-    val date = today()
+    val date = today() // recalling the function today from Date.kt
     val dateStyle = bold + green
     term.println(dateStyle("Today is $date"))
 }
