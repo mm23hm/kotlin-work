@@ -14,3 +14,7 @@
        ./kotlin run
 
 5. Compare program output with your predictions.
+
+NOTES:
+
+1) Val is used to store a value and the compiler does not let you assign something else to it but you cna later change that so it is not a constant only thing is you are kind of locked

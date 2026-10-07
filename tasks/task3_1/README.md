@@ -10,6 +10,7 @@
 
    Do you understand why the second of these causes a runtime error?
 
+Yes so basically when you put 'arg0 arg1' Kotlin only gets arg0 from you o arg0 = arg1 arg1 but it is not getting arg1 that is why there is an error.
 3. Add code to check that two command line arguments have been supplied.
    If this isn't the case, the program should print a suitable message and
    then terminate by calling `exitProcess()` with a non-zero exit status.
@@ -23,3 +24,5 @@
        echo $?
        ./kotlin run arg1 arg2 arg3
        echo $?
+
+echo $? holds the exit status of the last command which decides whether script execution shall continue (True/False)
