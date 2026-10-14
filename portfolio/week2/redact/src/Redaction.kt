@@ -1,22 +1,10 @@
 // COMP2850 Portfolio: Week 2
 // Function to redact sensitive information in a string
+// Haseeb Mudasar
+// Student ID: 201712687
 
-
-fun redact(document: String, reducted_text: String, character_used: Char = 'X'){
-    var doc = StringBuilder()
-    val red_text = reducted_text
-    val char_used = character_used
-    var masked = ""
-
-    for(n in doc.split(" ")){
-        if (n == red_text){
-            character_used.toString().repeat(red_text.length)
-            doc.append(" ${masked}")
-        }
-        else{
-            doc.append(" ${n}")
-        }
-    }
-    return doc.toString()
-
+fun redact(document: String, reducted_text: String, character_used: Char = 'X'): String{
+    return document.replace(
+        reducted_text, // replaces every time reducted_text is found
+        character_used.toString().repeat(reducted_text.length)) // repeats the character_used as many time as the reducted_text length
 }
