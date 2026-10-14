@@ -2,7 +2,7 @@
 // Functions for working with triangle geometry
 // Haseeb Mudasar
 // Student ID: 201712687
-// import kotlin.math.sqrt
+import kotlin.math.sqrt
 
 typealias Triangle = Triple<Double,Double,Double>
 
