@@ -10,11 +10,26 @@ const val tolerance = 0.000001f
 
 @Suppress("Unused")
 class MedianTest : FreeSpec({
+
     "Exception when size=0" {
         shouldThrow<IllegalArgumentException> {
             median(listOf())
         }
     }
 
-    // Write four more tests here
+    "Median when size=1" {
+        median(listOf(7.0f)) shouldBe (7.0f plusOrMinus tolerance)
+    }
+
+    "Median when size=2" {
+        median(listOf(8.0f, 3.0f)) shouldBe (5.5f plusOrMinus tolerance)
+    }
+
+    "Median when size=3" {
+        median(listOf(9.0f, 2.0f, 4.0f)) shouldBe (4.0f plusOrMinus tolerance)
+    }
+
+    "Median when size=4" {
+        median(listOf(12.0f, 3.0f, 8.0f, 5.0f)) shouldBe (6.5f plusOrMinus tolerance)
+    }
 })
